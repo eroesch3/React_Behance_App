@@ -35,6 +35,7 @@ class App extends Component {
         <header className="App-header">
           <p>
             APP RENDERS
+            <Switch></Switch>
             < Welcome />
           </p>
           

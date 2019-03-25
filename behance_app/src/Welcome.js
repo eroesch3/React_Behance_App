@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Boxholder from './Boxholder.js'
 import { Link } from "react-router-dom"
 // import PlanetDetail from './PlanetDetail';
 import {
@@ -29,6 +30,9 @@ render() {
                     <Dropdown.Item href="productdesign">Product Design</Dropdown.Item><br></br>
                     </Dropdown.Menu>
             </Dropdown>
+
+            <Boxholder />
+
 
         </div>
       )
