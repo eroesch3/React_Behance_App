@@ -9,6 +9,8 @@ class Boxholder extends Component {
         super(props)
         this.state = {
          searchTerm: '',
+         url: '',
+         collection: [],
         }
       }
 
@@ -18,12 +20,22 @@ class Boxholder extends Component {
     componentDidMount() {
         const pathname = window.location.pathname;
         searchTerm = pathname.slice(1);    
+        let url = `https://thingproxy.freeboard.io/fetch/http://www.behance.net/v2/collections?q=${searchTerm}&api_key=9qY9L6OYK133rLzSALQwTuUmz8IW5wsO`;
         console.log(searchTerm);
-        this.setState({ searchTerm: searchTerm })
-        return searchTerm;
+        this.setState({ 
+            searchTerm: searchTerm, 
+            // url: 'https://thingproxy.freeboard.io/fetch/http://www.behance.net/v2/collections?q=Architecture&api_key=9qY9L6OYK133rLzSALQwTuUmz8IW5wsO' 
+        })
+        fetch(url)
+        .then((response) => { 
+          return (response.json())
+        })
+        .then((json) => {
+            this.setState({ collection:json })
+            console.log(this.state.collection.collections[0].project_covers[0])
+             }
+        )
     }
-
-
 
 
     
