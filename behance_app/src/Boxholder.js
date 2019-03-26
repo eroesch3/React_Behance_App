@@ -1,70 +1,63 @@
 import React, { Component } from 'react'
-let searchTerm = 'failure';
-
-
-
+import Box from './Box.js';
+let searchTerm = '';
+let inputArray = [];
 
 class Boxholder extends Component {
     constructor(props){
+
+
         super(props)
         this.state = {
          searchTerm: '',
          url: '',
-         collection: [],
+         collectionStat: '',
         }
       }
-
-
-
 
     componentDidMount() {
         const pathname = window.location.pathname;
         searchTerm = pathname.slice(1);    
         let url = `https://thingproxy.freeboard.io/fetch/http://www.behance.net/v2/collections?q=${searchTerm}&api_key=9qY9L6OYK133rLzSALQwTuUmz8IW5wsO`;
-        console.log(searchTerm);
         this.setState({ 
-            searchTerm: searchTerm, 
-            // url: 'https://thingproxy.freeboard.io/fetch/http://www.behance.net/v2/collections?q=Architecture&api_key=9qY9L6OYK133rLzSALQwTuUmz8IW5wsO' 
+            searchTerm: searchTerm,  
         })
         fetch(url)
         .then((response) => { 
           return (response.json())
         })
         .then((json) => {
-            this.setState({ collection:json })
-            console.log(this.state.collection.collections[0].project_covers[0])
+            this.setState({ collectionStat:json.collections })
+            // console.log(this.state.collectionStat[0].project_covers[0])
              }
         )
     }
-
-
     
+
   render() {
-
     
-    // const planets = this.props.planets;
-    // let planetColor = '';
-    // let planetMoons = '';
-
-
-    // for (let i = 0, len = planets.length; i < len; i++) {
-    //     if (planets[i].name === planet) {
-    //       planetColor = planets[i].color
-    //       planetMoons = planets[i].num_moons
-    //       break; 
-    //     }
-    //   }
-
-      console.log(searchTerm)
-    //   console.log(planet)
-  
+    
+    let collectionVar = this.state.collectionStat;
+    inputArray = collectionVar.collections
+   
+    let allGalleries = Object.keys(this.state.collectionStat).map((gallery, index) => {
+      return (
+          <Box 
+          gallery={this.state.collectionStat[gallery]} 
+          key={index}
+          label={this.state.collectionStat[gallery].label} 
+          />
+      )
+    }) 
+    console.log('this.state.collectionStat', this.state.collectionStat)
     return (
       <div>
         <h1> {searchTerm} Collections: </h1>
-        {console.log(searchTerm)}
+        {allGalleries}
       </div>
     );
   }
 }
-
 export default Boxholder;
+
+
