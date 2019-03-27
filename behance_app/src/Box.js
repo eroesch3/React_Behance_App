@@ -8,9 +8,10 @@ function Box(props) {
     return (
       <div className="box" onClick={props.onDetailsClick}>
         {/* <Poster gallery={props.gallery} /> */}
-        {/* <img src={props.gallery.covers["115"]}  alt="gallery image" />  */}
 
-        <img src={props.gallery.project_covers[0].url}  alt="gallery image" /> 
+        <img src={props.gallery.latest_projects[0].covers["230"]}  alt="gallery image" /> 
+
+        {/* <img src={props.gallery.project_covers[0].url}  alt="gallery image" />  */}
 
 
         <div className="author">

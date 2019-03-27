@@ -17,7 +17,8 @@ render() {
       return (
         <div className="dropdown">
            Welcome Page 
-           <Dropdown>
+           
+           <Dropdown className="dropdown-link">
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
                     Dropdown Button
                 </Dropdown.Toggle>
@@ -64,6 +65,7 @@ render() {
                     
                     </Dropdown.Menu>
             </Dropdown>
+            
 
             <Boxholder />
 
