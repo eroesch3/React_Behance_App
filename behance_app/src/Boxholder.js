@@ -51,7 +51,9 @@ class Boxholder extends Component {
     console.log('this.state.collectionData', this.state.collectionData)
     return (
       <div>
+        <div className="collection-title">
         <h1> {searchTerm} Collections: </h1>
+        </div>
         <br></br>
         <div className="boxholder">
         {allGalleries}
