@@ -23,11 +23,45 @@ render() {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                    <Dropdown.Item href="architecture">Architecture
+                    <Dropdown.Item href="Architecture">Architecture
                     </Dropdown.Item> <br></br>
-                    <Dropdown.Item href="interiordesign">Interior Design</Dropdown.Item><br></br>
 
-                    <Dropdown.Item href="productdesign">Product Design</Dropdown.Item><br></br>
+                    <Dropdown.Item href="ArtDirection">Art Direction</Dropdown.Item><br></br>
+
+                    <Dropdown.Item href="AutomotiveDesign">Automotive Design</Dropdown.Item><br></br>
+
+                    <Dropdown.Item href="AutomotiveDesign">Automotive Design</Dropdown.Item><br></br>
+
+                    <Dropdown.Item href="Charicature">Charicature</Dropdown.Item><br></br>
+                    
+                    <Dropdown.Item href="CharacterDesign">Character Design</Dropdown.Item><br></br>
+                    
+                    
+                    <Dropdown.Item href="ComputerAnimation">Computer Animation</Dropdown.Item><br></br>
+
+                    <Dropdown.Item href="CreativeDirection">Creative Direction</Dropdown.Item><br></br>
+
+                    <Dropdown.Item href="EditorialDesign">Editorial Design</Dropdown.Item><br></br>
+
+                    <Dropdown.Item href="ExhibitionDesign">Exhibition Design</Dropdown.Item><br></br>
+
+                    <Dropdown.Item href="FurnitureDesign">Furniture Design</Dropdown.Item><br></br>
+
+                    <Dropdown.Item href="IconDesign">Icon Design</Dropdown.Item><br></br>
+
+                    <Dropdown.Item href="MakeUpArts">Make Up Arts</Dropdown.Item><br></br>
+
+                    <Dropdown.Item href="PatternDesign">Pattern Design</Dropdown.Item><br></br>
+
+                    <Dropdown.Item href="Poster">Poster Design</Dropdown.Item><br></br>
+                    
+                    <Dropdown.Item href="ToyDesign">Toy Design</Dropdown.Item><br></br>
+
+                    <Dropdown.Item href="Typography">Typography</Dropdown.Item><br></br>
+
+                    <Dropdown.Item href="WebDevelopment">Web Development</Dropdown.Item><br></br>
+
+                    
                     </Dropdown.Menu>
             </Dropdown>
 

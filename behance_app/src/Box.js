@@ -7,9 +7,14 @@ function Box(props) {
 
     return (
       <div className="box" onClick={props.onDetailsClick}>
-        <Poster gallery={props.gallery} />
+        {/* <Poster gallery={props.gallery} /> */}
+        {/* <img src={props.gallery.covers["115"]}  alt="gallery image" />  */}
+
+        <img src={props.gallery.project_covers[0].url}  alt="gallery image" /> 
+
+
         <div className="author">
-          {/* <h1>{props.gallery.owners[0].display_name}</h1> */}
+          <h1>{props.gallery.owners[0].display_name}</h1>
                 {/* need actual path to 'title' same w/ picture & author */}
         </div>        
       </div>

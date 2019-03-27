@@ -11,7 +11,7 @@ class Boxholder extends Component {
         this.state = {
          searchTerm: '',
          url: '',
-         collectionStat: '',
+         collectionData: '',
         }
       }
 
@@ -27,7 +27,7 @@ class Boxholder extends Component {
           return (response.json())
         })
         .then((json) => {
-            this.setState({ collectionStat:json.collections })
+            this.setState({ collectionData:json.collections })
             // console.log(this.state.collectionStat[0].project_covers[0])
              }
         )
@@ -36,20 +36,19 @@ class Boxholder extends Component {
 
   render() {
     
-    
-    let collectionVar = this.state.collectionStat;
+    let collectionVar = this.state.collectionData;
     inputArray = collectionVar.collections
    
-    let allGalleries = Object.keys(this.state.collectionStat).map((gallery, index) => {
+    let allGalleries = Object.keys(this.state.collectionData).map((gallery, index) => {
       return (
           <Box 
-          gallery={this.state.collectionStat[gallery]} 
+          gallery={this.state.collectionData[gallery]} 
           key={index}
-          label={this.state.collectionStat[gallery].label} 
+          label={this.state.collectionData[gallery].label} 
           />
       )
     }) 
-    console.log('this.state.collectionStat', this.state.collectionStat)
+    console.log('this.state.collectionData', this.state.collectionData)
     return (
       <div>
         <h1> {searchTerm} Collections: </h1>
