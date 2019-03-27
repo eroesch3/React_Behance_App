@@ -52,7 +52,10 @@ class Boxholder extends Component {
     return (
       <div>
         <h1> {searchTerm} Collections: </h1>
+        <br></br>
+        <div className="boxholder">
         {allGalleries}
+        </div>
       </div>
     );
   }

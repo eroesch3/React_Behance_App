@@ -31,8 +31,6 @@ render() {
 
                     <Dropdown.Item href="AutomotiveDesign">Automotive Design</Dropdown.Item><br></br>
 
-                    <Dropdown.Item href="AutomotiveDesign">Automotive Design</Dropdown.Item><br></br>
-
                     <Dropdown.Item href="Charicature">Charicature</Dropdown.Item><br></br>
                     
                     <Dropdown.Item href="CharacterDesign">Character Design</Dropdown.Item><br></br>

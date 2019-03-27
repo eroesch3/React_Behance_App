@@ -2,11 +2,19 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.box{
+width: 40%;
 }
+
+.boxholder{
+display: flex;
+align-items: flex-start;
+flex-wrap: wrap;
+height: 100%;
+justify-content: center;
+}
+
+
 
 .App-header {
   background-color: #282c34;
