@@ -9,7 +9,7 @@ class Boxholder extends Component {
 
         super(props)
         this.state = {
-         searchTerm: '',
+         searchTerm: 'ArtDirection',
          url: '',
          collectionData: '',
         }

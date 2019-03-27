@@ -15,7 +15,6 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-            APP RENDERS
             <Switch></Switch>
             < Welcome />          
         </header>

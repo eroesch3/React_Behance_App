@@ -24,8 +24,8 @@ render() {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                    <Dropdown.Item href="Architecture">Architecture
-                    </Dropdown.Item> <br></br>
+                    {/* <Dropdown.Item href="Architecture">Architecture
+                    </Dropdown.Item> <br></br> */}
 
                     <Dropdown.Item href="ArtDirection">Art Direction</Dropdown.Item><br></br>
 
@@ -36,7 +36,6 @@ render() {
                     <Dropdown.Item href="Charicature">Charicature</Dropdown.Item><br></br>
                     
                     <Dropdown.Item href="CharacterDesign">Character Design</Dropdown.Item><br></br>
-                    
                     
                     <Dropdown.Item href="ComputerAnimation">Computer Animation</Dropdown.Item><br></br>
 
@@ -54,7 +53,7 @@ render() {
 
                     <Dropdown.Item href="PatternDesign">Pattern Design</Dropdown.Item><br></br>
 
-                    <Dropdown.Item href="Poster">Poster Design</Dropdown.Item><br></br>
+                    {/* <Dropdown.Item href="Poster">Poster Design</Dropdown.Item><br></br> */}
                     
                     <Dropdown.Item href="ToyDesign">Toy Design</Dropdown.Item><br></br>
 
@@ -67,7 +66,7 @@ render() {
             </Dropdown>
             
 
-            <Boxholder />
+            {window.location.pathname.slice(1).length > 0 && <Boxholder />}
 
 
         </div>
