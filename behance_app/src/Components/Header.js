@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function Header(props) {
 
     return (
@@ -12,8 +11,6 @@ function Header(props) {
             <div className="header-second">
                 <h3>Powered By Behance</h3>
             </div>
-
-
         </div>
     )
 }
