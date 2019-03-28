@@ -5,7 +5,7 @@ import {
   Redirect,
   Switch
 } from "react-router-dom"
-import Welcome from './Welcome.js';
+import Welcome from './Components/Welcome.js';
 import './App.css';
 
 

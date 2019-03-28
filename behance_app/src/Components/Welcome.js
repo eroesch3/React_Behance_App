@@ -8,6 +8,7 @@ import {
 } from "react-router-dom"
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'react-bootstrap';
 import Header from './Header.js'
+import Footer from './Footer.js'
 
 class Welcome extends Component {
   constructor(props) {
@@ -32,8 +33,6 @@ class Welcome extends Component {
             <Dropdown.Item href="ArtDirection">Art Direction</Dropdown.Item><br></br><br></br>
 
             <Dropdown.Item href="AutomotiveDesign">Automotive Design</Dropdown.Item><br></br><br></br>
-
-            <Dropdown.Item href="Charicature">Charicature</Dropdown.Item><br></br><br></br>
 
             <Dropdown.Item href="CharacterDesign">Character Design</Dropdown.Item><br></br><br></br>
 
@@ -63,6 +62,7 @@ class Welcome extends Component {
         </Dropdown>
 
         {window.location.pathname.slice(1).length > 0 && <Boxholder />}
+        <Footer />
       </div>
     )
   }
