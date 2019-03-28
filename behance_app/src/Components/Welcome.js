@@ -13,9 +13,7 @@ class Welcome extends Component {
   }
 
   render() {
-
     return (
-    
       <div className="dropdown">
         <Header />
         <Dropdown>

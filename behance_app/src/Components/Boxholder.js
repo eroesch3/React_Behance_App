@@ -32,7 +32,6 @@ class Boxholder extends Component {
   }
 
   render() {
-
     let collectionVar = this.state.collectionData;
     inputArray = collectionVar.collections
 
