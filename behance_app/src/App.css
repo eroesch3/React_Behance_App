@@ -27,11 +27,21 @@ font-size: 19px;
   margin-bottom: 2%;
   }
 
-.header-main{
+.header-title{
+    color: rgb(120, 134, 192);
+    font-size: 37.9px;
+    margin-bottom: -1%;
+  };
+
+
+  .header-main{
   color: rgb(120, 134, 192);
-  font-size: 38px;
+  font-size: 28px;
   margin-bottom: -3%;
+  padding-right: 19.2%;
+  font-weight: 900;
 }
+
 
 .header-second{
 font-style: italic;  
