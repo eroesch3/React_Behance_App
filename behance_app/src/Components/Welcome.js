@@ -47,7 +47,7 @@ class Welcome extends Component {
 
             <Dropdown.Item href="ToyDesign">Toy Design</Dropdown.Item><br></br><br></br>
 
-s            <Dropdown.Item href="WebDevelopment">Web Development</Dropdown.Item><br></br><br></br>
+            <Dropdown.Item href="WebDevelopment">Web Development</Dropdown.Item><br></br><br></br>
 
           </Dropdown.Menu>
         </Dropdown>
