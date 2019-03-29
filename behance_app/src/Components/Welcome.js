@@ -1,12 +1,6 @@
 import React, { Component } from 'react'
 import Boxholder from './Boxholder.js'
-import { Link } from "react-router-dom"
-import {
-  Route,
-  // Redirect,
-  // Switch
-} from "react-router-dom"
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'react-bootstrap';
+import { Dropdown } from 'react-bootstrap';
 import Header from './Header.js'
 import Footer from './Footer.js'
 
@@ -19,7 +13,6 @@ class Welcome extends Component {
   }
 
   render() {
-
     return (
       <div className="dropdown">
         <Header />
@@ -53,8 +46,6 @@ class Welcome extends Component {
             <Dropdown.Item href="PatternDesign">Pattern Design</Dropdown.Item><br></br><br></br>
 
             <Dropdown.Item href="ToyDesign">Toy Design</Dropdown.Item><br></br><br></br>
-
-            <Dropdown.Item href="Typography">Typography</Dropdown.Item><br></br><br></br>
 
             <Dropdown.Item href="WebDevelopment">Web Development</Dropdown.Item><br></br><br></br>
 

@@ -2,9 +2,7 @@
 import React from 'react';
 import Poster from './Poster.js';
 
-
 function Box(props) {
-
   return (
     <div className="box" onClick={props.onDetailsClick}>
       <Poster gallery={props.gallery} />
