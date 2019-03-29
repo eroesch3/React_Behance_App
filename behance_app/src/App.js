@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import {
-  Link,
-  Redirect,
-  Switch
-} from "react-router-dom"
 import Welcome from './Components/Welcome.js';
 import './App.css';
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Boxholder from './Boxholder.js'
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'react-bootstrap';
+import { Dropdown } from 'react-bootstrap';
 import Header from './Header.js'
 import Footer from './Footer.js'
 
@@ -47,9 +47,7 @@ class Welcome extends Component {
 
             <Dropdown.Item href="ToyDesign">Toy Design</Dropdown.Item><br></br><br></br>
 
-            <Dropdown.Item href="Typography">Typography</Dropdown.Item><br></br><br></br>
-
-            <Dropdown.Item href="WebDevelopment">Web Development</Dropdown.Item><br></br><br></br>
+s            <Dropdown.Item href="WebDevelopment">Web Development</Dropdown.Item><br></br><br></br>
 
           </Dropdown.Menu>
         </Dropdown>
